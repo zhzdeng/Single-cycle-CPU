@@ -10,54 +10,54 @@
 设计一个单周期CPU，该CPU至少能实现以下指令功能操作。需设计的指令与格式如下：
 ==> 算术运算指令
 （1）add  rd , rs, rt  （说明：以助记符表示，是汇编指令；以代码表示，是机器指令）
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/add.png)
+![](images/add.png)
 
 功能：rd←rs + rt。reserved为预留部分，即未用，一般填“0”。
 （2）addi  rt , rs ,immediate
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/addi.png)
+![](images/addi.png)
 
 功能：rt←rs + (sign-extend)immediate；immediate符号扩展再参加“加”运算。
     （3）sub  rd , rs , rt
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/sub.png)
+![](images/sub.png)
 
 完成功能：rd←rs - rt
     ==> 逻辑运算指令
 （4）ori  rt , rs ,immediate
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/ori.png)
+![](images/ori.png)
 
 功能：rt←rs | (zero-extend)immediate；immediate做“0”扩展再参加“或”运算。
 （5）and  rd , rs , rt
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/and.png)
+![](images/and.png)
 
 
 功能：rd←rs & rt；逻辑与运算。
     （6）or  rd , rs , rt
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/or.png)
+![](images/or.png)
 
 功能：rd←rs | rt；逻辑或运算。
     ==> 传送指令
     （7）move  rd , rs
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/move.png)
+![](images/move.png)
 
 功能：rd←rs + $0 ；$0=$zero=0。
 ==> 存储器读/写指令
 （8）sw  rt ,immediate(rs) 写存储器
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/sw.png)
+![](images/sw.png)
 
    功能：memory[rs+ (sign-extend)immediate]←rt；immediate符号扩展再相加。
 （9) lw  rt , immediate(rs) 读存储器
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/lw.png)
+![](images/lw.png)
 
 功能：rt ← memory[rs + (sign-extend)immediate]；immediate符号扩展再相加。
  ==> 分支指令
     （10）beq  rs,rt,immediate
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/beq.png)
+![](images/beq.png)
 功能：if(rs=rt) pc←pc + 4 + (sign-extend)immediate <<2；
 特别说明：immediate是从PC+4地址开始和转移到的指令之间指令条数。immediate符号扩展之后左移2位再相加。为什么要左移2位？由于跳转到的指令地址肯定是4的倍数（每条指令占4个字节），最低两位是“00”，因此将immediate放进指令码中的时候，是右移了2位的，也就是以上说的“指令之间指令条数”。
 
 ==> 停机指令
 （11）halt
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/halt.png)
+![](images/halt.png)
 
 功能：停机；不改变PC的值，PC保持不变。
 
@@ -73,10 +73,10 @@
 
 
 ###CPU结构图
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/overview.png)
+![fdasf]:(images/overview.png)
 
 ###Control Unit 控制信号与指令关系
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/CU.png)
+![](images/CU.png)
 
 ###ALU功能表
-![]:(https://github.com/zhzdeng/Single-cycle-CPU/images/ALUOp.png)
+![](images/ALUOp.png)
