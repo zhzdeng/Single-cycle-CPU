@@ -23,6 +23,9 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Control_Unit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Control_Unit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Control_Unit.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DataRam.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DataRam.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="DataRam.xst"/>

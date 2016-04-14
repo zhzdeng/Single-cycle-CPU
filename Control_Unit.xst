@@ -1,5 +1,5 @@
 set -tmpdir "Y:/Desktop/Single-cycle-CPU/xst/projnav.tmp"
 set -xsthdpdir "Y:/Desktop/Single-cycle-CPU/xst"
 elaborate
--ifn GeneralRegisters.prj
+-ifn Control_Unit.prj
 -ifmt mixed

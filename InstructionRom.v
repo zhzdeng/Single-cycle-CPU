@@ -24,9 +24,9 @@
 //	 输出32位指令，[address] ~ [address + 3]的内容
 //  myRomData.txt用16进制数写
 module InstructionRom(
-	output reg[31:0]read_data,
 	input [31:0]address,
-	input read_enable
+	input read_enable,
+	output reg[31:0]read_data
 	);
 	 
 	 reg [7:0] member [0:255];
