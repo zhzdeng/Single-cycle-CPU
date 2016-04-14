@@ -41,7 +41,7 @@ module Control_Unit(
 				InsMemRW <= 0;
 				RegOut <= 1;
 				RegWre <= 1;
-				ALUOp <= 2'b000;
+				ALUOp <= 3'b000;
 				ALUSrcB <= 0;
 				ALUM2Reg <= 0;
 				PCSrc <= 1;
@@ -53,7 +53,7 @@ module Control_Unit(
 				InsMemRW <= 0;
 				RegOut <= 0;
 				RegWre <= 1;
-				ALUOp <= 2'b000;
+				ALUOp <= 3'b000;
 				ALUSrcB <= 1;
 				ALUM2Reg <= 0;
 				PCSrc <= 1;
@@ -65,7 +65,7 @@ module Control_Unit(
 				InsMemRW <= 0;
 				RegOut <= 1;
 				RegWre <= 1;
-				ALUOp <= 2'b001;
+				ALUOp <= 3'b001;
 				ALUSrcB <= 0;
 				ALUM2Reg <= 0;
 				PCSrc <= 1;
@@ -77,7 +77,7 @@ module Control_Unit(
 				InsMemRW <= 0;
 				RegOut <= 0;
 				RegWre <= 1;
-				ALUOp <= 2'b011;
+				ALUOp <= 3'b011;
 				ALUSrcB <= 1;
 				ALUM2Reg <= 0;
 				PCSrc <= 1;
@@ -89,7 +89,7 @@ module Control_Unit(
 				InsMemRW <= 0;
 				RegOut <= 1;
 				RegWre <= 1;
-				ALUOp <= 2'b100;
+				ALUOp <= 3'b100;
 				ALUSrcB <= 0;
 				ALUM2Reg <= 0;
 				PCSrc <= 1;
@@ -101,7 +101,7 @@ module Control_Unit(
 				InsMemRW <= 0;
 				RegOut <= 1;
 				RegWre <= 1;
-				ALUOp <= 2'b011;
+				ALUOp <= 3'b011;
 				ALUSrcB <= 0;
 				ALUM2Reg <= 0;
 				PCSrc <= 1;
@@ -113,7 +113,7 @@ module Control_Unit(
 				InsMemRW <= 0;
 				RegOut <= 1;
 				RegWre <= 1;
-				ALUOp <= 2'b000;
+				ALUOp <= 3'b000;
 				ALUSrcB <= 0;
 				ALUM2Reg <= 0;
 				PCSrc <= 1;
@@ -125,7 +125,7 @@ module Control_Unit(
 				InsMemRW <= 0;
 				RegOut <= 0;
 				RegWre <= 0;
-				ALUOp <= 2'b000;
+				ALUOp <= 3'b000;
 				ALUSrcB <= 1;
 				ALUM2Reg <= 0;
 				PCSrc <= 1;
@@ -137,7 +137,7 @@ module Control_Unit(
 				InsMemRW <= 0;
 				RegOut <= 0;
 				RegWre <= 1;
-				ALUOp <= 2'b000;
+				ALUOp <= 3'b000;
 				ALUSrcB <= 1;
 				ALUM2Reg <= 1;
 				PCSrc <= 1;
@@ -149,7 +149,7 @@ module Control_Unit(
 				InsMemRW <= 0;
 				RegOut <= 0;
 				RegWre <= 0;
-				ALUOp <= 2'b001;
+				ALUOp <= 3'b001;
 				ALUSrcB <= 0;
 				ALUM2Reg <= 0;
 				PCSrc <= 1;
@@ -161,7 +161,7 @@ module Control_Unit(
 				InsMemRW <= 0;
 				RegOut <= 1;
 				RegWre <= 0;
-				ALUOp <= 2'b000;
+				ALUOp <= 3'b000;
 				ALUSrcB <= 0;
 				ALUM2Reg <= 0;
 				PCSrc <= 0;
