@@ -32,6 +32,7 @@
 
 功能：rd←rs & rt；逻辑与运算。
     （6）or  rd , rs , rt
+
 ![](images/or.png)
 
 功能：rd←rs | rt；逻辑或运算。
@@ -50,18 +51,19 @@
 
 功能：rt ← memory[rs + (sign-extend)immediate]；immediate符号扩展再相加。
  ==> 分支指令
-    （10）beq  rs,rt,immediate
+(10)beq  rs,rt,immediate
 ![](images/beq.png)
+
 功能：if(rs=rt) pc←pc + 4 + (sign-extend)immediate <<2；
 特别说明：immediate是从PC+4地址开始和转移到的指令之间指令条数。immediate符号扩展之后左移2位再相加。为什么要左移2位？由于跳转到的指令地址肯定是4的倍数（每条指令占4个字节），最低两位是“00”，因此将immediate放进指令码中的时候，是右移了2位的，也就是以上说的“指令之间指令条数”。
 
 ==> 停机指令
 （11）halt
+
 ![](images/halt.png)
 
 功能：停机；不改变PC的值，PC保持不变。
 
-在本文档中，提供的相关内容对于设计可能不足或甚至有错误，希望同学们在设计过程中如发现有问题，请你们自行改正，进一步补充、完善。谢谢！
 
 ###实验原理
 单周期CPU指的是一条指令的执行在一个时钟周期内完成，然后开始下一条指令的执行，即一条指令用一个时钟周期完成。电平从低到高变化的瞬间称为时钟上升沿，两个相邻时钟上升沿之间的时间间隔称为一个时钟周期。时钟周期一般也称振荡周期（如果晶振的输出没有经过分频就直接作为CPU的工作时钟，则时钟周期就等于振荡周期。若振荡周期经二分频后形成时钟脉冲信号作为CPU的工作时钟，这样，时钟周期就是振荡周期的两倍。）
@@ -73,7 +75,7 @@
 
 
 ###CPU结构图
-![fdasf]:(images/overview.png)
+![](images/overview.png)
 
 ###Control Unit 控制信号与指令关系
 ![](images/CU.png)
