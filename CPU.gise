@@ -69,6 +69,9 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PC.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PC.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="PC.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SignOrZeroExtend.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SignOrZeroExtend.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SignOrZeroExtend.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
