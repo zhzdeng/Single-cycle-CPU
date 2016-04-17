@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU/xst"
-elaborate
--ifn ALU.prj
--ifmt mixed
