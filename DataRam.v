@@ -26,7 +26,7 @@ module DataRam(
 	inout [31:0] data
    );
 	reg [7:0] memory [0:255];
-	assign data = RW == 0 ? {memory[address], memory[address + 1], 
+	assign data = (RW == 0) ? {memory[address], memory[address + 1], 
 								 memory[address + 2], memory[address + 3]} : 32'bz;
 	always @(posedge address) begin
 			if (RW == 1) begin

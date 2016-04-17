@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-17T16:00:56</DateModified>
+  <DateModified>2016-04-17T22:27:34</DateModified>
   <ModuleName>InstructionRom</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>Y:/Desktop/Single-cycle-CPU/iseconfig/InstructionRom.xreport</SavedFilePath>
