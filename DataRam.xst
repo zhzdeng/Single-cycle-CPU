@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/deng/CPU/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/deng/CPU/xst"
-elaborate
--ifn DataRam.prj
--ifmt mixed
