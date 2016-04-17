@@ -1,5 +1,5 @@
-set -tmpdir "Y:/Desktop/Single-cycle-CPU/xst/projnav.tmp"
-set -xsthdpdir "Y:/Desktop/Single-cycle-CPU/xst"
+set -tmpdir "C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU/xst"
 elaborate
 -ifn PC.prj
 -ifmt mixed

@@ -23,6 +23,9 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Control_Unit.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Control_Unit.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Control_Unit.xst"/>
@@ -69,6 +72,12 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PC.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PC.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="PC.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCIncrementer.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PCIncrementer.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PCIncrementer.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCJumper.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PCJumper.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PCJumper.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SignOrZeroExtend.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SignOrZeroExtend.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="SignOrZeroExtend.xst"/>

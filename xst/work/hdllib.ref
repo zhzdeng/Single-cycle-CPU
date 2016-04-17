@@ -1,6 +1,9 @@
+MO PCJumper NULL PCJumper.v vlg76/_p_c_jumper.bin 1460869653
 MO Control_Unit NULL Control_Unit.v vlg24/_control___unit.bin 1460650067
-MO PC NULL PC.v vlg53/_p_c.bin 1460567124
+MO PC NULL PC.v vlg53/_p_c.bin 1460868605
 MO InstructionRom NULL InstructionRom.v vlg3C/_instruction_rom.bin 1460638532
+MO PCIncrementer NULL PCIncrementer.v vlg43/_p_c_incrementer.bin 1460868676
 MO SignOrZeroExtend NULL SignOrZeroExtend.v vlg22/_sign_or_zero_extend.bin 1460792275
+MO ALU NULL ALU.v vlg2A/_a_l_u.bin 1460875242
 MO GeneralRegisters NULL GeneralRegisters.v vlg02/_general_registers.bin 1460567137
 MO DataRam NULL DataRam.v vlg5E/_data_ram.bin 1460551211
