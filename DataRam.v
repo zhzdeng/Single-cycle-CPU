@@ -21,14 +21,19 @@
 // data 数据输入输出 address 地址总线 read = 1 读 write = 1 写
 // write和read不同时为1
 module DataRam(
-   inout [7:0] data,
-   input [7:0] address,
-   input read,
-   input write
+   input [31:0] address,
+   input RW,
+	inout [31:0] data
    );
-	reg [8:0] memory [0:255];
-	assign data = read ? memory[address] : 4'bz;
-	always @( posedge write)
-         memory[address] = data;
-
+	reg [7:0] memory [0:255];
+	assign data = RW == 0 ? {memory[address], memory[address + 1], 
+								 memory[address + 2], memory[address + 3]} : 32'bz;
+	always @(posedge address) begin
+			if (RW == 1) begin
+         memory[address] <= data[31:24];
+			memory[address + 1] <= data[23:16];
+			memory[address + 2] <= data[15:8];
+			memory[address + 3] <= data[7:0];
+			end
+	end
 endmodule
