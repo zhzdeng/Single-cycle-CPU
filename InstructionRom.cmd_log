@@ -3,3 +3,4 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 Instruction
 map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o InstructionRom_map.ncd InstructionRom.ngd InstructionRom.pcf 
 par -w -intstyle ise -ol high -t 1 InstructionRom_map.ncd InstructionRom.ncd InstructionRom.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml InstructionRom.twx InstructionRom.ncd -o InstructionRom.twr InstructionRom.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/InstructionRom.xst" -ofn "Y:/Desktop/Single-cycle-CPU/InstructionRom.syr" 

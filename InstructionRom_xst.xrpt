@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Wed Apr 13 20:40:20 2016">
+  <application stringID="Xst" timeStamp="Sun Apr 17 22:45:25 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.4\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.4\ISE_DS\ISE\\bin\nt64;C:\Xilinx\Vivado_HLS\2012.4\bin;C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.4\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.4\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\Vivado\2012.4\bin;C:\Xilinx\14.4\ISE_DS\PlanAhead\bin;C:\Xilinx\14.4\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.4\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\nt64\bin;C:\Xilinx\14.4\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;C:\Xilinx\14.4\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.4\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.4\ISE_DS\common\bin\nt64;C:\Xilinx\14.4\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\"/>
+          <item stringID="value" value="C:\Xilinx\14.4\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.4\ISE_DS\ISE\\bin\nt64;C:\Xilinx\Vivado_HLS\2012.4\bin;C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.4\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.4\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\Vivado\2012.4\bin;C:\Xilinx\14.4\ISE_DS\PlanAhead\bin;C:\Xilinx\14.4\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.4\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\nt64\bin;C:\Xilinx\14.4\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;C:\Xilinx\14.4\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.4\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.4\ISE_DS\common\bin\nt64;C:\Xilinx\14.4\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Git\cmd"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -109,49 +109,10 @@
       <item DEFAULT="YES" label="-equivalent_register_removal" stringID="XST_EQUIVALENTREGISTERREMOVAL" value="YES"/>
       <item DEFAULT="0%" label="-slice_utilization_ratio_maxmargin" stringID="XST_SLICEUTILIZATIONRATIOMAXMARGIN" value="5"/>
     </section>
-    <section stringID="XST_HDL_SYNTHESIS_REPORT">
-      <item dataType="int" stringID="XST_ADDERSSUBTRACTORS" value="2"></item>
-    </section>
-    <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORT"></section>
-    <section stringID="XST_FINAL_REGISTER_REPORTFOUND_NO_MACRO"/>
-    <section stringID="XST_PARTITION_REPORT">
-      <section stringID="XST_PARTITION_IMPLEMENTATION_STATUS">
-        <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>
-      </section>
-    </section>
-    <section stringID="XST_FINAL_REPORT">
-      <section stringID="XST_FINAL_RESULTS">
-        <item stringID="XST_RTL_TOP_LEVEL_OUTPUT_FILE_NAME" value="InstructionRom.ngr"/>
-        <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="InstructionRom"/>
-        <item stringID="XST_OUTPUT_FORMAT" value="NGC"/>
-        <item stringID="XST_OPTIMIZATION_GOAL" value="Speed"/>
-        <item stringID="XST_KEEP_HIERARCHY" value="No"/>
-      </section>
-      <section stringID="XST_DESIGN_STATISTICS">
-        <item stringID="XST_IOS" value="41"/>
-      </section>
-      <section stringID="XST_CELL_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="1">
-          <item dataType="int" stringID="XST_GND" value="1"/>
-        </item>
-        <item dataType="int" stringID="XST_IO_BUFFERS" value="32">
-          <item dataType="int" stringID="XST_OBUF" value="32"/>
-        </item>
-      </section>
-    </section>
-    <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
-      <item stringID="XST_SELECTED_DEVICE" value="3s100ecp132-4"/>
-      <item AVAILABLE="960" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="0"/>
-      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="41"/>
-      <item AVAILABLE="83" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="32"/>
-    </section>
-    <section stringID="XST_PARTITION_RESOURCE_SUMMARY">
-      <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>
-    </section>
     <section stringID="XST_ERRORS_STATISTICS">
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="36"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="5"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="1"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="0"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="0"/>
     </section>
   </application>
 
