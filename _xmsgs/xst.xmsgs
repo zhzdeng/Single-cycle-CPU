@@ -5,7 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="Xst" num="1918" delta="new" >&quot;<arg fmt="%s" index="1">InstructionRom.v</arg>&quot; line <arg fmt="%d" index="2">35</arg>: Unable to find file &quot;<arg fmt="%s" index="3">myRomData</arg>&quot;.
+<msg type="warning" file="HDLCompilers" num="261" delta="new" ><arg fmt="%s" index="1">&quot;SingleCycleCPU.v&quot; line 77 </arg>Connection to output port &apos;<arg fmt="%s" index="2">ALUOp</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;SingleCycleCPU.v&quot; line 101 </arg>Connection to input port &apos;<arg fmt="%s" index="2">WriteRegAddress</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;SingleCycleCPU.v&quot; line 119 </arg>Connection to input port &apos;<arg fmt="%s" index="2">ALUOp</arg>&apos; does not match port size
+</msg>
+
+<msg type="error" file="Xst" num="0" delta="new" ><arg fmt="%s" index="1">&quot;SingleCycleCPU.v&quot; line 21: </arg>Module &lt;<arg fmt="%s" index="2">SingleCycleCPU</arg>&gt; has no port.
 </msg>
 
 </messages>
