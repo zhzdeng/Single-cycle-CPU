@@ -2,10 +2,11 @@
 <report-views version="2.0" >
  <header>
   <ImplementationReportsDirectory>Y:/Desktop/Single-cycle-CPU\</ImplementationReportsDirectory>
-  <ModuleName>InstructionRom</ModuleName>
-  <DateModified>2016-04-17T22:46:04</DateModified>
+  <ModuleName>SingleCycleCPU</ModuleName>
+  <DateModified>2016-04-18T17:53:12</DateModified>
   <SavedFilePath>Y:/Desktop/Single-cycle-CPU/iseconfig/InstructionRom.xreport</SavedFilePath>
-  <DateInitialized>2016-04-17T22:44:46</DateInitialized>
+  <DateInitialized>2016-04-18T17:53:12</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
+  <SummaryTimeStamp>2016-04-18T17:47:15</SummaryTimeStamp>
  </header>
 </report-views>

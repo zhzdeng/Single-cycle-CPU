@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    20:39:40 04/13/2016 
-// Design Name: 
-// Module Name:    GeneralRegisters 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    20:39:40 04/13/2016
+// Design Name:
+// Module Name:    GeneralRegisters
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 // 参数列表
@@ -39,8 +39,14 @@ module GeneralRegisters(
 			  0 : registers[ReadReg1Address];
 	 assign ReadData2 = ReadReg2Address == 0 ?
 			  0 : registers[ReadReg2Address];
-	 
+
 	 integer i; // 蜜汁错误，放到里面就语法错误
+
+   initial begin
+     for (i = 1; i < 31; i = i + 1) registers[i] <= 0;
+   end
+
+
 	 always @(posedge Clock or negedge CleanAllControl) begin
 		if (CleanAllControl == 0) begin
 			//integer i = 1;
