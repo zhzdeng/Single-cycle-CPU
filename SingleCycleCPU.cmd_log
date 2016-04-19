@@ -1,3 +1,26 @@
 xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
 xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
 xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 SingleCycleCPU.ngc SingleCycleCPU.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o SingleCycleCPU_map.ncd SingleCycleCPU.ngd SingleCycleCPU.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 SingleCycleCPU.ngc SingleCycleCPU.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o SingleCycleCPU_map.ncd SingleCycleCPU.ngd SingleCycleCPU.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 SingleCycleCPU.ngc SingleCycleCPU.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o SingleCycleCPU_map.ncd SingleCycleCPU.ngd SingleCycleCPU.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.xst" -ofn "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.syr" 

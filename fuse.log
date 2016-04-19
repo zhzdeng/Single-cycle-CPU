@@ -1,0 +1,41 @@
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o Y:/Desktop/Single-cycle-CPU/TextFile_isim_beh.exe -prj Y:/Desktop/Single-cycle-CPU/TextFile_beh.prj work.TextFile work.glbl 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/TwoInOneSelector5Bit.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/TwoInOneSelector.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/SignOrZeroExtend.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/PCJumper.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/PCIncrementer.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/PC.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/InstructionRom.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/GeneralRegisters.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/DataRam.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/Control_Unit.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/ALU.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/SingleCycleCPU.v" into library work
+Analyzing Verilog file "Y:/Desktop/Single-cycle-CPU/TextFile.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module PC
+Compiling module InstructionRom
+Compiling module Control_Unit
+Compiling module SignOrZeroExtend
+Compiling module TwoInOneSelector5Bit
+Compiling module GeneralRegisters
+Compiling module ALU
+Compiling module PCIncrementer
+Compiling module PCJumper
+Compiling module DataRam
+Compiling module BitTwoInOneSelector32Bit
+Compiling module SingleCycleCPU
+Compiling module TextFile
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 14 Verilog Units
+Built simulation executable Y:/Desktop/Single-cycle-CPU/TextFile_isim_beh.exe
+Fuse Memory Usage: 28064 KB
+Fuse CPU Usage: 624 ms

@@ -18,21 +18,19 @@
 // Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
-module SingleCycleCPU;
+module SingleCycleCPU(
+		input init
+	);
 
 reg clk;
 
-initial
-begin
-	// 设定时钟信号 10ns变换一次
-	clk = 0;
-	forever #10 clk = !clk;
-end
+
 
 // 控制信号
 wire Extsel, PCWre, InsMemRW, RegOut,
-     RegWre, ALUOp, ALUSrcB, ALUM2Reg, PCSrc, DataMemRW;
-
+     RegWre, ALUSrcB, ALUM2Reg, PCSrc, DataMemRW;
+wire [2:0] ALUOp;
+// 中间数据
 wire [31:0]_instruction;
 wire [31:0]_PcOut;
 wire [31:0]_PcIn;
@@ -45,6 +43,14 @@ wire [31:0]_WriteData;
 wire [31:0]_ALUResult;
 wire [31:0]_DataOut;
 wire [31:0]_PcIndect;
+
+initial
+begin
+  // 设定时钟信号 100ns变换一次
+  clk = 1'b1;
+  forever #100 clk = !clk;
+end
+
 // 获取指令
 // pd -> InstructionRom ->
 PC pc(
@@ -57,7 +63,7 @@ PC pc(
 
 InstructionRom instructionrom(
 			.address(_PcOut),  		             // 输入地址
-			.read_enable(InsMemRW),	           // 读的使能端
+			.RW(InsMemRW),	           // 读的使能端
 			.read_data(_instruction)			     // 数据输出端口
 		);
 
@@ -140,9 +146,10 @@ PCJumper pcjumper(
 // DataRam -> (Registers)
 
 DataRam dataram(
-      .address(_ALUResult),
-      .RW(DataMemRW),
-      .data(_RgData2)
+      .address(_ALUResult),                  // 数据存储器地址输入端口
+      .DataIn(_RgData2),                     // 数据存储器数据输入端口
+      .RW(DataMemRW),                        // 数据存储器读写控制信号
+      .DataOut(_DataOut)                     // 数据存储器数据输出端口
     );
 
 BitTwoInOneSelector32Bit DataOutputSelector(

@@ -25,7 +25,7 @@
 module GeneralRegisters(
     input [4:0] ReadReg1Address,
     input [4:0] ReadReg2Address,
-    input WriteRegAddress,
+    input [4:0] WriteRegAddress,
     input [31:0] DataOfWrite,
     input WriteControl,
     input Clock,
@@ -34,6 +34,10 @@ module GeneralRegisters(
     output [31:0] ReadData2
     );
 
+//   initial begin
+//      ReadData1 <= 32'bz;
+//      ReadData2 <= 32'bz;
+//   end
 	 reg[31:0] registers[1:31]; // r1 - r31 0号寄存器不可见，固定为0
 	 assign ReadData1 = ReadReg1Address == 0 ?
 			  0 : registers[ReadReg1Address];

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "Y:/Desktop/Single-cycle-CPU/TextFile_isim_beh.exe" -prj "Y:/Desktop/Single-cycle-CPU/TextFile_beh.prj" "work.TextFile" "work.glbl" 
