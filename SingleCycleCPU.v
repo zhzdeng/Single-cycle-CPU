@@ -33,6 +33,7 @@ end
 wire Extsel, PCWre, InsMemRW, RegOut,
      RegWre, ALUOp, ALUSrcB, ALUM2Reg, PCSrc, DataMemRW;
 
+// 中间数据
 wire [31:0]_instruction;
 wire [31:0]_PcOut;
 wire [31:0]_PcIn;
@@ -45,6 +46,7 @@ wire [31:0]_WriteData;
 wire [31:0]_ALUResult;
 wire [31:0]_DataOut;
 wire [31:0]_PcIndect;
+
 // 获取指令
 // pd -> InstructionRom ->
 PC pc(
@@ -140,9 +142,10 @@ PCJumper pcjumper(
 // DataRam -> (Registers)
 
 DataRam dataram(
-      .address(_ALUResult),
-      .RW(DataMemRW),
-      .data(_RgData2)
+      .address(_ALUResult),                  // 数据存储器地址输入端口
+      .DataIn(_RgData2),                     // 数据存储器数据输入端口
+      .RW(DataMemRW),                        // 数据存储器读写控制信号
+      .DataOut(_DataOut)                     // 数据存储器数据输出端口
     );
 
 BitTwoInOneSelector32Bit DataOutputSelector(

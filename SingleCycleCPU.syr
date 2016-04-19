@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.09 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: SingleCycleCPU.prj
 
@@ -128,19 +128,16 @@ Module <Control_Unit> compiled
 Compiling verilog file "SingleCycleCPU.v" in library work
 Module <ALU> compiled
 Module <SingleCycleCPU> compiled
-No errors in compilation
-Analysis of file <"SingleCycleCPU.prj"> succeeded.
- 
-
-=========================================================================
-*                     Design Hierarchy Analysis                         *
-=========================================================================
-ERROR:Xst - "SingleCycleCPU.v" line 21: Module <SingleCycleCPU> has no port.
+ERROR:HDLCompilers:247 - "DataRam.v" line 37 Reference to vector wire 'DataOut' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:106 - "DataRam.v" line 37 Illegal left hand side of nonblocking assignment
+ERROR:HDLCompilers:247 - "DataRam.v" line 39 Reference to vector wire 'DataOut' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:44 - "DataRam.v" line 39 Illegal left hand side of blocking assignment
+Analysis of file <"SingleCycleCPU.prj"> failed.
 --> 
 
-Total memory usage is 242948 kilobytes
+Total memory usage is 241696 kilobytes
 
-Number of errors   :    1 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

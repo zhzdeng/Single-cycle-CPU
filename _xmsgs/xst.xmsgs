@@ -5,16 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompilers" num="261" delta="new" ><arg fmt="%s" index="1">&quot;SingleCycleCPU.v&quot; line 77 </arg>Connection to output port &apos;<arg fmt="%s" index="2">ALUOp</arg>&apos; does not match port size
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;DataRam.v&quot; line 37 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;DataOut&apos;</arg> is not a legal reg or variable lvalue
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;SingleCycleCPU.v&quot; line 101 </arg>Connection to input port &apos;<arg fmt="%s" index="2">WriteRegAddress</arg>&apos; does not match port size
+<msg type="error" file="HDLCompilers" num="106" delta="old" ><arg fmt="%s" index="1">&quot;DataRam.v&quot; line 37 </arg>Illegal left hand side of nonblocking assignment
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;SingleCycleCPU.v&quot; line 119 </arg>Connection to input port &apos;<arg fmt="%s" index="2">ALUOp</arg>&apos; does not match port size
+<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;DataRam.v&quot; line 39 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;DataOut&apos;</arg> is not a legal reg or variable lvalue
 </msg>
 
-<msg type="error" file="Xst" num="0" delta="new" ><arg fmt="%s" index="1">&quot;SingleCycleCPU.v&quot; line 21: </arg>Module &lt;<arg fmt="%s" index="2">SingleCycleCPU</arg>&gt; has no port.
+<msg type="error" file="HDLCompilers" num="44" delta="old" ><arg fmt="%s" index="1">&quot;DataRam.v&quot; line 39 </arg>Illegal left hand side of blocking assignment
 </msg>
 
 </messages>
