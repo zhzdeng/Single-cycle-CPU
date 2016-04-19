@@ -34,8 +34,9 @@ module PC(
 				// ²»Í£»ú
                 if (reset == 1 'b1)
 					     instructionOutput = 32 'h00000000;
-					 else
+					 else begin
 					     instructionOutput = instructionInput;
+					 end
 		  end
 
 endmodule

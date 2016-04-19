@@ -27,14 +27,17 @@ module DataRam(
    );
 
 	reg [7:0] memory [0:255];
+  integer i;
+  initial begin
+    for (i = 0; i < 255; i = i + 1) memory[i] <= 32'b0;
+  end
 
-	always @(posedge address) begin
+	always @(address) begin
 			if (RW == 1) begin
         memory[address] <= DataIn[31:24];
   			memory[address + 1] <= DataIn[23:16];
   			memory[address + 2] <= DataIn[15:8];
   			memory[address + 3] <= DataIn[7:0];
-        DataOut <= 32'bz;
 			end else begin
         DataOut = {memory[address], memory[address + 1],
                  memory[address + 2], memory[address + 3]};

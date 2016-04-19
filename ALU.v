@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    13:40:59 04/17/2016 
-// Design Name: 
-// Module Name:    ALU 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    13:40:59 04/17/2016
+// Design Name:
+// Module Name:    ALU
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 module ALU(
@@ -29,6 +29,12 @@ module ALU(
     );
 	 reg[31:0] tempB;
 	 reg[31:0] tempResult;
+
+   initial begin
+      zero <= 1'bz;
+      result <= 32'bz;
+   end
+
     always @(InputDataA or InputDataB or ImmediateDataB)
 	     begin
 		      zero <= 0;

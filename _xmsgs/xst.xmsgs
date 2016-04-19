@@ -5,16 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;DataRam.v&quot; line 37 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;DataOut&apos;</arg> is not a legal reg or variable lvalue
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">SingleCycleCPU.v</arg>&quot; line <arg fmt="%d" index="2">31</arg>: Unsupported <arg fmt="%s" index="3">Forever Statement</arg>. 
 </msg>
 
-<msg type="error" file="HDLCompilers" num="106" delta="old" ><arg fmt="%s" index="1">&quot;DataRam.v&quot; line 37 </arg>Illegal left hand side of nonblocking assignment
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">SingleCycleCPU.v</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">reset</arg>&apos; of instance &apos;<arg fmt="%s" index="4">pc</arg>&apos; is tied to GND.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="247" delta="old" ><arg fmt="%s" index="1">&quot;DataRam.v&quot; line 39 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;DataOut&apos;</arg> is not a legal reg or variable lvalue
-</msg>
-
-<msg type="error" file="HDLCompilers" num="44" delta="old" ><arg fmt="%s" index="1">&quot;DataRam.v&quot; line 39 </arg>Illegal left hand side of blocking assignment
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">SingleCycleCPU.v</arg>&quot; line <arg fmt="%d" index="2">101</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CleanAllControl</arg>&apos; of instance &apos;<arg fmt="%s" index="4">generalregisters</arg>&apos; is tied to GND.
 </msg>
 
 </messages>

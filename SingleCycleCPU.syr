@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.09 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: SingleCycleCPU.prj
 
@@ -128,16 +128,52 @@ Module <Control_Unit> compiled
 Compiling verilog file "SingleCycleCPU.v" in library work
 Module <ALU> compiled
 Module <SingleCycleCPU> compiled
-ERROR:HDLCompilers:247 - "DataRam.v" line 37 Reference to vector wire 'DataOut' is not a legal reg or variable lvalue
-ERROR:HDLCompilers:106 - "DataRam.v" line 37 Illegal left hand side of nonblocking assignment
-ERROR:HDLCompilers:247 - "DataRam.v" line 39 Reference to vector wire 'DataOut' is not a legal reg or variable lvalue
-ERROR:HDLCompilers:44 - "DataRam.v" line 39 Illegal left hand side of blocking assignment
-Analysis of file <"SingleCycleCPU.prj"> failed.
+No errors in compilation
+Analysis of file <"SingleCycleCPU.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <SingleCycleCPU> in library <work>.
+
+Analyzing hierarchy for module <PC> in library <work>.
+
+Analyzing hierarchy for module <InstructionRom> in library <work>.
+
+Analyzing hierarchy for module <Control_Unit> in library <work>.
+
+Analyzing hierarchy for module <SignOrZeroExtend> in library <work>.
+
+Analyzing hierarchy for module <TwoInOneSelector5Bit> in library <work>.
+
+Analyzing hierarchy for module <GeneralRegisters> in library <work>.
+
+Analyzing hierarchy for module <ALU> in library <work>.
+
+Analyzing hierarchy for module <PCIncrementer> in library <work>.
+
+Analyzing hierarchy for module <PCJumper> in library <work>.
+
+Analyzing hierarchy for module <DataRam> in library <work>.
+
+Analyzing hierarchy for module <BitTwoInOneSelector32Bit> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <SingleCycleCPU>.
+ERROR:Xst:850 - "SingleCycleCPU.v" line 31: Unsupported Forever Statement. 
+WARNING:Xst:852 - "SingleCycleCPU.v" line 54: Unconnected input port 'reset' of instance 'pc' is tied to GND.
+WARNING:Xst:852 - "SingleCycleCPU.v" line 101: Unconnected input port 'CleanAllControl' of instance 'generalregisters' is tied to GND.
+ 
+Found 1 error(s). Aborting synthesis.
 --> 
 
-Total memory usage is 241696 kilobytes
+Total memory usage is 247492 kilobytes
 
-Number of errors   :    4 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
