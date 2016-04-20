@@ -35,7 +35,7 @@ module ALU(
       result <= 32'bz;
    end
 
-    always @(InputDataA or InputDataB or ImmediateDataB)
+    always @(InputDataA or InputDataB or ImmediateDataB or ALUSrcB or ALUOp)
 	     begin
 		      zero <= 0;
 		      if (ALUSrcB == 1)

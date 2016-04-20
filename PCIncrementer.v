@@ -27,7 +27,8 @@ module PCIncrementer(
     initial begin
       instructionOutput <= 32'bz;
     end
-    always @(instructionInput)
+
+      always @(instructionInput or PCWre)
 	     begin
 		      if (PCWre == 1 'b1)
 				    instructionOutput = instructionInput + 4;

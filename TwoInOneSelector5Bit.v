@@ -22,9 +22,10 @@ module TwoInOneSelector5Bit(
     input [4:0] ZeroInput,
     input [4:0] OneInput,
     input Control,
-    output [4:0] DataOutput
+    output reg[4:0] DataOutput
     );
 
-	 assign DataOutput = (Control == 1) ? OneInput : ZeroInput;
-
+    always @(Control or ZeroInput or OneInput) begin
+    	 DataOutput = (Control == 1) ? OneInput : ZeroInput;
+    end
 endmodule

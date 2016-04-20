@@ -27,7 +27,7 @@ module PCJumper(
     initial begin
       instructionOutput = 32'b0;
     end
-    always @(instructionInput)
+    always @(instructionInput or PCSrc)
 	     begin
 		      if (PCSrc == 0)
 				    instructionOutput = instructionInput;

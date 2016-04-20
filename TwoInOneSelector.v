@@ -22,8 +22,10 @@ module BitTwoInOneSelector32Bit(
     input [31:0] ZeroInput,
     input [31:0] OneInput,
     input Control,
-    output [31:0] DataOutput
+    output reg[31:0] DataOutput
     );
 
-	 assign DataOutput = (Control == 1) ? OneInput : ZeroInput;
+   always @(Control or ZeroInput or OneInput) begin
+	   DataOutput = (Control == 1) ? OneInput : ZeroInput;
+   end
 endmodule

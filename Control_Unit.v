@@ -18,6 +18,7 @@
 // Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
+// zero ”–Œ Ã‚
 module Control_Unit(
     input [5:0] opcode,
     input zero,
@@ -45,7 +46,7 @@ module Control_Unit(
 		ALUOp <= 3'bz;
 		ALUSrcB <= 1'bz;
 	end
-	always @(opcode) begin
+	always @(opcode or zero) begin
 		case(opcode)
 			6'b000000: begin // add
 				Extsel <= 1;
@@ -141,7 +142,7 @@ module Control_Unit(
 				ALUSrcB <= 1;
 				ALUM2Reg <= 0;
 				PCSrc <= 0;
-				DataMemRW <= 0;
+				DataMemRW <= 1;
 				end
 			6'b100111: begin // lw
 				Extsel <= 1;
@@ -153,7 +154,7 @@ module Control_Unit(
 				ALUSrcB <= 1;
 				ALUM2Reg <= 1;
 				PCSrc <= 0;
-				DataMemRW <= 1;
+				DataMemRW <= 0;
 				end
 			6'b110000: begin // beq
 				Extsel <= 1;

@@ -34,10 +34,6 @@ module GeneralRegisters(
     output [31:0] ReadData2
     );
 
-//   initial begin
-//      ReadData1 <= 32'bz;
-//      ReadData2 <= 32'bz;
-//   end
 	 reg[31:0] registers[1:31]; // r1 - r31 0号寄存器不可见，固定为0
 	 assign ReadData1 = ReadReg1Address == 0 ?
 			  0 : registers[ReadReg1Address];
@@ -47,18 +43,17 @@ module GeneralRegisters(
 	 integer i; // 蜜汁错误，放到里面就语法错误
 
    initial begin
-     for (i = 1; i < 31; i = i + 1) registers[i] <= 0;
+     for (i = 1; i < 32; i = i + 1) registers[i] <= 0;
    end
 
-
-	 always @(posedge Clock or negedge CleanAllControl) begin
+	 always @(negedge Clock) begin
 		if (CleanAllControl == 0) begin
 			//integer i = 1;
 			for (i = 1; i < 32; i = i + 1)
 				registers[i] <= 0;
 		end else begin
-			 if (WriteControl != 0 && WriteControl == 1)
-				registers[WriteRegAddress] <= DataOfWrite;
+			 if (WriteControl == 1)
+				registers[WriteRegAddress] = DataOfWrite;
 	   end
 	 end
 endmodule
