@@ -19,38 +19,28 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module SingleCycleCPU(
-		input init
-	);
-
-reg clk;
-
-
+		input clk,
 
 // 控制信号
-wire Extsel, PCWre, InsMemRW, RegOut,
-     RegWre, ALUSrcB, ALUM2Reg, PCSrc, DataMemRW;
-wire [2:0] ALUOp;
+input Extsel, input PCWre, input InsMemRW, input RegOut, input
+     RegWre, input ALUSrcB, input ALUM2Reg, input PCSrc, input DataMemRW,
+input [2:0] ALUOp,
 // 中间数据
-wire [31:0]_instruction;
-wire [31:0]_PcOut;
-wire [31:0]_PcIn;
-wire _zero;
-wire [31:0]_extendOut;
-wire [4:0]_thirdRg;
-wire [31:0]_RgData1;
-wire [31:0]_RgData2;
-wire [31:0]_WriteData;
-wire [31:0]_ALUResult;
-wire [31:0]_DataOut;
-wire [31:0]_PcIndect;
+input [31:0]_instruction,
+input [31:0]_PcOut,
+input [31:0]_PcIn,
+input _zero,
+input [31:0]_extendOut,
+input [4:0]_thirdRg,
+input [31:0]_RgData1,
+input [31:0]_RgData2,
+input [31:0]_WriteData,
+input [31:0]_ALUResult,
+input [31:0]_DataOut,
+input [31:0]_PcIndect
 
-initial
-begin
-  // 设定时钟信号 100ns变换一次
-  clk = 1'b1;
-  forever #1000 clk = !clk;
-end
-
+);
+//end
 // 获取指令
 // pd -> InstructionRom ->
 PC pc(
