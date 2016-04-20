@@ -25,7 +25,10 @@ module SignOrZeroExtend(
     output reg [31:0] DataOut
     );
 
-	 always @(immediate) begin
+    initial begin
+      DataOut <= 32'bz;
+    end
+	 always @(immediate or ExtSel) begin
 		if (ExtSel == 0)
 			DataOut = {16'b0000000000000000, immediate};
 		else

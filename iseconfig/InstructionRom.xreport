@@ -1,11 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <ImplementationReportsDirectory>C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU\</ImplementationReportsDirectory>
   <ModuleName>SingleCycleCPU</ModuleName>
   <DateModified>2016-04-19T00:48:47</DateModified>
   <SavedFilePath>C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU/iseconfig/InstructionRom.xreport</SavedFilePath>
   <DateInitialized>2016-04-19T00:48:47</DateInitialized>
+=======
+<<<<<<< HEAD
+  <ImplementationReportsDirectory>Y:/Desktop/Single-cycle-CPU\</ImplementationReportsDirectory>
+  <ModuleName>SingleCycleCPU</ModuleName>
+  <DateModified>2016-04-18T17:53:12</DateModified>
+  <SavedFilePath>Y:/Desktop/Single-cycle-CPU/iseconfig/InstructionRom.xreport</SavedFilePath>
+  <DateInitialized>2016-04-18T17:53:12</DateInitialized>
+=======
+  <ImplementationReportsDirectory>C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU\</ImplementationReportsDirectory>
+  <ModuleName>InstructionRom</ModuleName>
+  <DateModified>2016-04-19T13:14:21</DateModified>
+  <SavedFilePath>C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU/iseconfig/InstructionRom.xreport</SavedFilePath>
+  <DateInitialized>2016-04-17T22:44:46</DateInitialized>
+>>>>>>> 1d10689950a0a29103e95dc4d3a0c6e6e51fa4e3
+>>>>>>> 01087b58d54240c91d1aac9dc49558f0c3ede52e
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
 </report-views>

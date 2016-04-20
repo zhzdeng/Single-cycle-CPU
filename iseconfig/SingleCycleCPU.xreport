@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-18T21:34:03</DateModified>
+  <DateModified>2016-04-20T19:17:52</DateModified>
   <ModuleName>SingleCycleCPU</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-04-19T14:27:48</SummaryTimeStamp>
   <SavedFilePath>Y:/Desktop/Single-cycle-CPU/iseconfig/SingleCycleCPU.xreport</SavedFilePath>
   <ImplementationReportsDirectory>Y:/Desktop/Single-cycle-CPU\</ImplementationReportsDirectory>
   <DateInitialized>2016-04-18T19:38:10</DateInitialized>

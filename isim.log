@@ -1,0 +1,63 @@
+ISim log file
+Running: Y:\Desktop\Single-cycle-CPU\TextFile_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Y:/Desktop/Single-cycle-CPU/TextFile_isim_beh.wdb 
+ISim P.49d (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 50 us :  in File "//psf/Home/Desktop/Single-cycle-CPU/TextFile.v" Line 35 
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 50 us :  in File "//psf/Home/Desktop/Single-cycle-CPU/TextFile.v" Line 35 
+# run all
+Stopped at time : 16624016 us : File "//psf/Home/Desktop/Single-cycle-CPU/PC.v" Line 32
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Stopped at time : 0 fs : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Finished circuit initialization process.
+Stopped at time : 0 fs : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Stopped at time : 4 us : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Stopped at time : 6 us : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Stopped at time : 8 us : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Stopped at time : 10 us : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Stopped at time : 12 us : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Stopped at time : 14 us : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Stopped at time : 0 fs : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Finished circuit initialization process.
+Stopped at time : 0 fs : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Stopped at time : 4 us : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Stopped at time : 6 us : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Stopped at time : 8 us : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Stopped at time : 10 us : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Stopped at time : 0 fs : File "//psf/Home/Desktop/Single-cycle-CPU/Control_Unit.v" Line 50
+# run all
+Finished circuit initialization process.
+Stopped at time : 50 us :  in File "//psf/Home/Desktop/Single-cycle-CPU/TextFile.v" Line 35 

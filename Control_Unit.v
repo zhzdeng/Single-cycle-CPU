@@ -1,23 +1,24 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    21:01:39 04/14/2016 
-// Design Name: 
-// Module Name:    Control_Unit 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    21:01:39 04/14/2016
+// Design Name:
+// Module Name:    Control_Unit
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
+// zero 有问题
 module Control_Unit(
     input [5:0] opcode,
     input zero,
@@ -33,7 +34,19 @@ module Control_Unit(
     output reg DataMemRW // 1:写入数据存储器（只有lw），0：读
     );
 
-	always @(opcode) begin
+	initial begin
+		PCWre <= 1;
+		InsMemRW <= 0;
+		Extsel <= 0;
+		PCSrc <= 0;
+		DataMemRW <= 0;
+		ALUM2Reg <= 0;
+		RegOut <= 1'bz;
+		RegWre <= 1'bz;
+		ALUOp <= 3'bz;
+		ALUSrcB <= 1'bz;
+	end
+	always @(opcode or zero) begin
 		case(opcode)
 			6'b000000: begin // add
 				Extsel <= 1;
@@ -93,7 +106,7 @@ module Control_Unit(
 				ALUSrcB <= 0;
 				ALUM2Reg <= 0;
 				PCSrc <= 0;
-				DataMemRW <= 0;		
+				DataMemRW <= 0;
 				end
 			6'b010010: begin // or
 				Extsel <= 0;
@@ -105,7 +118,7 @@ module Control_Unit(
 				ALUSrcB <= 0;
 				ALUM2Reg <= 0;
 				PCSrc <= 0;
-				DataMemRW <= 0;		
+				DataMemRW <= 0;
 				end
 			6'b100000: begin // move
 				Extsel <= 1;
@@ -129,7 +142,7 @@ module Control_Unit(
 				ALUSrcB <= 1;
 				ALUM2Reg <= 0;
 				PCSrc <= 0;
-				DataMemRW <= 0;
+				DataMemRW <= 1;
 				end
 			6'b100111: begin // lw
 				Extsel <= 1;
@@ -141,7 +154,7 @@ module Control_Unit(
 				ALUSrcB <= 1;
 				ALUM2Reg <= 1;
 				PCSrc <= 0;
-				DataMemRW <= 1;
+				DataMemRW <= 0;
 				end
 			6'b110000: begin // beq
 				Extsel <= 1;

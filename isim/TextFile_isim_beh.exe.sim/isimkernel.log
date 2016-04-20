@@ -1,0 +1,10 @@
+Command line:
+   TextFile_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49192
+
+Wed Apr 20 17:18:34 2016
+
+
+ Elaboration Time: 0.0624 sec

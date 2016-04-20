@@ -18,22 +18,32 @@
 // Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
-// data 数据输入输出 address 地址总线 read = 1 读 write = 1 写
-// write和read不同时为1
+// DataIn 数据输入 address 地址总线 RW : 1 write; :0 read
 module DataRam(
-   input [31:0] address,
-   input RW,
-	 inout [31:0] data
+   input [31:0] address,       // 数据存储器地址输入端口
+   input [31:0] DataIn,        // 数据存储器数据输入端口
+   input RW,                   // 数据存储器读写控制信号
+   input clk,
+	 output reg[31:0] DataOut        // 数据存储器数据输出端口
    );
+
 	reg [7:0] memory [0:255];
-	assign data = (RW == 0) ? {memory[address], memory[address + 1],
-								 memory[address + 2], memory[address + 3]} : 32'bz;
-	always @(posedge address) begin
+  integer i;
+  initial begin
+    for (i = 0; i < 256; i = i + 1) memory[i] <= 32'b0;
+  end
+
+  always @(address or DataIn or RW) begin
+    if (RW == 0)
+        DataOut = {memory[address], memory[address + 1],
+                 memory[address + 2], memory[address + 3]};
+    end
+	always @(negedge clk) begin
 			if (RW == 1) begin
-         memory[address] <= data[31:24];
-			memory[address + 1] <= data[23:16];
-			memory[address + 2] <= data[15:8];
-			memory[address + 3] <= data[7:0];
+        memory[address] <= DataIn[31:24];
+  			memory[address + 1] <= DataIn[23:16];
+  			memory[address + 2] <= DataIn[15:8];
+  			memory[address + 3] <= DataIn[7:0];
 			end
 	end
 endmodule

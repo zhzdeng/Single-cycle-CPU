@@ -18,33 +18,29 @@
 // Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
-module SingleCycleCPU;
-
-reg clk;
-
-initial
-begin
-	// 设定时钟信号 10ns变换一次
-	clk = 0;
-	forever #10 clk = !clk;
-end
+module SingleCycleCPU(
+		input clk,
 
 // 控制信号
-wire Extsel, PCWre, InsMemRW, RegOut,
-     RegWre, ALUOp, ALUSrcB, ALUM2Reg, PCSrc, DataMemRW;
+input Extsel, input PCWre, input InsMemRW, input RegOut, input
+     RegWre, input ALUSrcB, input ALUM2Reg, input PCSrc, input DataMemRW,
+input [2:0] ALUOp,
+// 中间数据
+input [31:0]_instruction,
+input [31:0]_PcOut,
+input [31:0]_PcIn,
+input _zero,
+input [31:0]_extendOut,
+input [4:0]_thirdRg,
+input [31:0]_RgData1,
+input [31:0]_RgData2,
+input [31:0]_WriteData,
+input [31:0]_ALUResult,
+input [31:0]_DataOut,
+input [31:0]_PcIndect
 
-wire [31:0]_instruction;
-wire [31:0]_PcOut;
-wire [31:0]_PcIn;
-wire _zero;
-wire [31:0]_extendOut;
-wire [4:0]_thirdRg;
-wire [31:0]_RgData1;
-wire [31:0]_RgData2;
-wire [31:0]_WriteData;
-wire [31:0]_ALUResult;
-wire [31:0]_DataOut;
-wire [31:0]_PcIndect;
+);
+//end
 // 获取指令
 // pd -> InstructionRom ->
 PC pc(
@@ -57,7 +53,7 @@ PC pc(
 
 InstructionRom instructionrom(
 			.address(_PcOut),  		             // 输入地址
-			.read_enable(InsMemRW),	           // 读的使能端
+			.RW(InsMemRW),	           // 读的使能端
 			.read_data(_instruction)			     // 数据输出端口
 		);
 
@@ -140,9 +136,11 @@ PCJumper pcjumper(
 // DataRam -> (Registers)
 
 DataRam dataram(
-      .address(_ALUResult),
-      .RW(DataMemRW),
-      .data(_RgData2)
+      .address(_ALUResult),                  // 数据存储器地址输入端口
+      .DataIn(_RgData2),                     // 数据存储器数据输入端口
+      .RW(DataMemRW),                        // 数据存储器读写控制信号
+      .clk(clk),
+      .DataOut(_DataOut)                     // 数据存储器数据输出端口
     );
 
 BitTwoInOneSelector32Bit DataOutputSelector(

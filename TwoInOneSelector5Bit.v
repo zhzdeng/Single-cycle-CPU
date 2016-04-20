@@ -1,30 +1,31 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    19:47:31 04/18/2016 
-// Design Name: 
-// Module Name:    TwoInOneSelector5Bit 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    19:47:31 04/18/2016
+// Design Name:
+// Module Name:    TwoInOneSelector5Bit
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 module TwoInOneSelector5Bit(
     input [4:0] ZeroInput,
     input [4:0] OneInput,
     input Control,
-    output [4:0] DataOutput
+    output reg[4:0] DataOutput
     );
 
-	 assign DataOutput = (Control == 1) ? OneInput : ZeroInput;
-
+    always @(Control or ZeroInput or OneInput) begin
+    	 DataOutput = (Control == 1) ? OneInput : ZeroInput;
+    end
 endmodule
