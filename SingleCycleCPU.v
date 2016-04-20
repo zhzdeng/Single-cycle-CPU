@@ -48,7 +48,7 @@ initial
 begin
   // 设定时钟信号 100ns变换一次
   clk = 1'b1;
-  forever #100 clk = !clk;
+  forever #1000 clk = !clk;
 end
 
 // 获取指令
@@ -149,6 +149,7 @@ DataRam dataram(
       .address(_ALUResult),                  // 数据存储器地址输入端口
       .DataIn(_RgData2),                     // 数据存储器数据输入端口
       .RW(DataMemRW),                        // 数据存储器读写控制信号
+      .clk(clk),
       .DataOut(_DataOut)                     // 数据存储器数据输出端口
     );
 

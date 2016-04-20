@@ -30,13 +30,11 @@ module PC(
 	     instructionOutput = 32 'h00000000;
     always @(posedge clk)
 	     begin
-		      if (PCWre != 1 'b0)
-				// 不停机
-                if (reset == 1 'b1)
-					     instructionOutput = 32 'h00000000;
-					 else begin
-					     instructionOutput = instructionInput;
-					 end
+		      if (PCWre != 1 'b0) begin
+				        // 不停机
+               if (reset == 1 'b1) instructionOutput = 32 'h00000000;
+					     else instructionOutput = instructionInput;
+					end
 		  end
 
 endmodule

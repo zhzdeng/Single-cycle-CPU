@@ -32,7 +32,7 @@ module TextFile;
 		// Initialize Inputs
 		
 		// Wait 100 ns for global reset to finish
-	   #5000 $stop;
+	   #50000 $stop;
         
 		// Add stimulus here
 
