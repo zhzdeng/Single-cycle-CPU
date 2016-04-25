@@ -32,6 +32,9 @@
 <msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU/TextFile.v" Line 41: &lt;<arg fmt="%s" index="1">_extendOut</arg>&gt; is already implicitly declared earlier.
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU/TextFile.v" Line 42: &lt;<arg fmt="%s" index="1">_thirdRg</arg>&gt; is already implicitly declared earlier.
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU/TextFile.v" Line 43: &lt;<arg fmt="%s" index="1">_RgData1</arg>&gt; is already implicitly declared earlier.
 </msg>
 
@@ -48,9 +51,6 @@
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU/TextFile.v" Line 48: &lt;<arg fmt="%s" index="1">_PcIndect</arg>&gt; is already implicitly declared earlier.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Tommy Leo/Documents/GitHub/Single-cycle-CPU/TextFile.v" Line 30: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">_thirdRg</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
 </messages>

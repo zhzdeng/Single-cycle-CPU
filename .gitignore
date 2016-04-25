@@ -27,3 +27,12 @@ SingleCycleCPU.stx
 *.xst
 *.wdb
 _xmsgs/*
+PC_isim_beh.exe
+TextFile_beh.prj
+TextFile_isim_beh.exe
+TextFile_isim_beh.wdb
+fuse.log
+isim
+isim.cmd
+isim.log
+xilinxsim.ini

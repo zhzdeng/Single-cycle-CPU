@@ -27,7 +27,7 @@ module TextFile;
 	// Instantiate the Unit Under Test (UUT)
 	SingleCycleCPU uut (clk, Extsel,  PCWre,  InsMemRW,  RegOut,
      RegWre,  ALUSrcB,  ALUM2Reg,  PCSrc,  DataMemRW, ALUOp, _instruction,
-		_PcOut, _PcIn, _zero, _extendOut, thirdRg, _RgData1, _RgData2,
+		_PcOut, _PcIn, _zero, _extendOut, _thirdRg, _RgData1, _RgData2,
 		_WriteData, _ALUResult, _DataOut, _PcIndect);
 	reg clk;
 	wire Extsel,  PCWre,  InsMemRW,  RegOut,
